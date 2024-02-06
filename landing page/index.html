@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<div>
+    <div class="content">
+        <div class="nav-sec">
+            <div class="logo">
+                <h1>Tandoor Treats</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!--Hero Section-->
+        <div class="container-fluid herosection">
+            <div class="row">
+                <div class="col-12 hero-content herocontent">
+                    <!-- Your content goes here -->
+                    <h1>Discover the Flavorful World of Shawarma & Desserts</h1>
+                    <p>Indulge in the perfect blend of savory shawarmas and delectable desserts at our corner of
+                        culinary
+                        delight. Savor the taste, experience the joy.</p>
+                    <div class="orderbtn">
+                        <a href="#menu">
+                            <button>
+                                Order Now
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--About Section-->
+        <div class="aboutsection" id="about">
+            <div class="container-fluid hello">
+                <div class="aboutsection">
+                    <div class="aboutinfo">
+                        <h1>Namaste and Merhaba!,</h1>
+                        <p>
+                            I'm thrilled to welcome you to TandoorTreats, a culinary haven where the rich flavors of
+                            India
+                            and the vibrant tastes of
+                            Turkey come together in perfect harmony. As the proud owner, I've always been passionate
+                            about
+                            bringing people together
+                            through the joy of food, and TandoorTreats is the culmination of that dream.
+                        </p>
+                    </div>
+                    <div class="aboutimg">
+                        <img src="images/namasthe.png" alt="About Us" class="img-fluid" height="200" width="200">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ourstory">
+            <div class="storyimg">
+                <img src="images/story.jpg" alt="Our Story" class="img-fluid" height="200" width="200">
+            </div>
+            <div class="storyinfo">
+                <h1>Our Story</h1>
+                <p>Inspired by the bustling streets of Delhi and the enchanting markets of Istanbul, TandoorTreats is a
+                    celebration of the
+                    diverse culinary traditions that make India and Turkey truly special. Our journey began with a
+                    simple idea - to create a
+                    space where you can experience the authentic taste of chicken shawarma and indulge in mouthwatering
+                    desserts, all
+                    infused with the warmth and spices of India.
+                </p>
+            </div>
+        </div>
+        <!--uniqueness-->
+        <div class="uniqueness">
+            <div class="unqinfo">
+                <h1>What Sets Us Apart</h1>
+                <p>At TandoorTreats, we take pride in crafting every dish with love and attention to detail. Our chicken
+                    shawarmas are
+                    seasoned to perfection, slow-cooked to juicy tenderness, and served with a variety of delectable
+                    toppings. From the
+                    traditional tandoor to the fragrant spices of Turkish cuisine, each bite is a flavorful adventure.
+
+                    But TandoorTreats is not just about savory delights; our dessert corner is a sweet escape. Dive into
+                    the world of
+                    heavenly treats, from the decadent Gulab Jamun to the irresistible Baklava. Every dessert is a
+                    journey through the rich
+                    cultural tapestry of India and Turkey.</p>
+            </div>
+            <div class="unqimg">
+                <img src="images/unqimg.jpg" alt="our uniqueness" class="unqimg" height="200" width="200">
+            </div>
+        </div>
+        <!--our promise-->
+        <div class="promise">
+            <div class="promimg"><img src="images/promimg.jpg" alt="our promise"></div>
+            <div class="prominfo">
+                <h1>Our Promise</h1>
+                <p>Here at TandoorTreats, we are committed to providing a warm and inviting atmosphere, where every
+                    guest feels like a part
+                    of our extended family. Whether you're craving a quick bite or looking for a place to celebrate, we
+                    invite you to savor
+                    the essence of India and Turkey in every dish we serve.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Food Menu Section -->
+    <div class="menuhead" id="menu">
+        <h3>Menu</h3>
+    </div>
+    <div class="menusec" id="orderhere">
+        <nav class="foodmenu">
+            <a href="#" class="menu-link" onclick="showMenu('shawarmas')">Shawarma</a>
+            <a href="#" class="menu-link" onclick="showMenu('desserts')">Dessert</a>
+            <a href="#" class="menu-link" onclick="showMenu('drinks')">Drinks</a>
+        </nav>
+    </div>
+
+    <div id="shawarmas" class="menu-section shawarmas">
+        <div class="menu-item">
+            <img src="images/shawarma/chickenshwaarma.jpg" alt="Chicken Shawarma Image">
+            <h2>Chicken Shawarma</h2>
+            <p>A classic shawarma made with succulent chicken pieces, marinated in a blend of flavorful spices, and
+                roasted
+                to perfection.</p>
+            <p class="price">$10.99</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/shawarma/mutton shawarma.jpg" alt="Mutton Shawarma Image">
+            <h2>Mutton Shawarma</h2>
+            <p>Indulge in the rich taste of mutton shawarma, featuring tender mutton slices, expertly seasoned and
+                grilled
+                for an authentic flavor.</p>
+            <p class="price">$10.99</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/shawarma/egg shawarma.jpg" alt="Egg Shawarma Image">
+            <h2>Egg Shawarma</h2>
+            <p>A unique twist with egg shawarma, combining the goodness of eggs with aromatic spices, creating a
+                delightful
+                and fulfilling dish.</p>
+            <p class="price">$8.99</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/shawarma/paneer shawarma.jpg" alt="Paneer Shawarma Image">
+            <h2>Paneer Shawarma</h2>
+            <p>Experience the vegetarian delight with paneer shawarma, featuring marinated paneer cubes, grilled to
+                perfection, and served with love.</p>
+            <p class="price">$6.99</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/shawarma/skb shawarma.jpg" alt="Sheek Kabab Shawarma Image">
+            <h2>Sheek Kabab Shawarma</h2>
+            <p>Enjoy the fusion of sheek kabab and shawarma, a mouthwatering combination of flavorful skewered meat and
+                the
+                traditional shawarma style.</p>
+            <p class="price">$9.99</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/shawarma/veg shawarma.jpg" alt="Vegetarian Shawarma Image">
+            <h2>Veg Shawarma</h2>
+            <p>Savor the goodness of a variety of vegetables in veg shawarma, a perfect choice for vegetarians seeking a
+                delightful shawarma experience.</p>
+            <p class="price">$10.99</p>
+            <button>Order Now</button>
+        </div>
+    </div>
+
+    <div id="desserts" class="menu-section">
+        <div class="menu-item">
+            <img src="images/dessert/apricot.jpg" alt="Apricot Delight Image">
+            <h2>Apricot Delight</h2>
+            <p>A delightful dessert featuring fresh apricots, sweetened to perfection and garnished for a burst of
+                flavor.
+            </p>
+            <p class="price">$1.56</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/dessert/baklava.jpg" alt="Baklava Image">
+            <h2>Baklava</h2>
+            <p>A classic Turkish pastry made of layers of phyllo dough, chopped nuts, and sweetened with honey or syrup.
+            </p>
+            <p class="price">$2.99</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/dessert/carrot halwa.jpg" alt="Carrot Halwa Image">
+            <h2>Carrot Halwa</h2>
+            <p>A traditional Indian sweet dish made with grated carrots, milk, and sugar, cooked to perfection.</p>
+            <p class="price">$1.99</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/dessert/jamun.jpg" alt="Gulaab Jaamun Image">
+            <h2>Gulaab Jaamun</h2>
+            <p>A popular Indian dessert consisting of deep-fried dumplings, soaked in rose-flavored sugar syrup.</p>
+            <p class="price">$2.99</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/dessert/lokum.jpg" alt="Lokum Image">
+            <h2>Lokum</h2>
+            <p>Also known as Turkish Delight, Lokum is a sweet confection made of starch and sugar, flavored with
+                various
+                ingredients.</p>
+            <p class="price">$1.99</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/dessert/milkcake.jpg" alt="Milk Cake Image">
+            <h2>Milk Cake</h2>
+            <p>A spongy and sweet dessert made with condensed milk, sugar, and flour, creating a delightful treat.</p>
+            <p class="price">$1.05</p>
+            <button>Order Now</button>
+        </div>
+    </div>
+
+    <div id="drinks" class="menu-section">
+        <div class="menu-item">
+            <img src="images/drink/lassi.jpg" alt="Lassi Image">
+            <h2>Lassi</h2>
+            <p>A traditional Indian drink made with yogurt, water, and various spices. It can be sweet or savory, and
+                popular variations include mango lassi and rose lassi.</p>
+            <p class="price">$1.05</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/drink/americanicecoffee.jpg" alt="American Iced Coffee Image">
+            <h2>American Iced Coffee</h2>
+            <p>Cold-brewed coffee served over ice, often sweetened and flavored. It's a refreshing choice for coffee
+                enthusiasts.</p>
+            <p class="price">$1.00</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/drink/turkisharyan.jpg" alt="Turkish Aryan Image">
+            <h2>Turkish Aryan</h2>
+            <p>A traditional Turkish yogurt-based drink, mixed with water and a pinch of salt. It's a cool and tangy
+                beverage commonly consumed with kebabs.</p>
+            <p class="price">$1.20</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/drink/ItalianLimonata.jpg" alt="Italian Limonata Image">
+            <h2>Italian Limonata</h2>
+            <p>A sparkling lemonade from Italy, made with fresh lemon juice, sparkling water, and sweetened with sugar.
+                It's
+                a zesty and effervescent choice.</p>
+            <p class="price">$2.05</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/drink/Japantea.jpg" alt="Japanese Matcha Iced Tea Image">
+            <h2>Japanese Matcha Iced Tea</h2>
+            <p>Cold green tea made from finely ground matcha powder, offering a unique and earthy flavor. It's a popular
+                and
+                healthy cold drink choice.</p>
+            <p class="price">$1.45</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/drink/Mexican.jpg" alt="Mexican Horchata Image">
+            <h2>Mexican Horchata</h2>
+            <p>A sweet and creamy rice-based drink from Mexico, flavored with cinnamon and vanilla. It's a delightful
+                and
+                cooling option.</p>
+            <p class="price">$1.65</p>
+            <button>Order Now</button>
+        </div>
+    </div>
+    <!--review section-->
+    <div class="reviewhead">
+        <h3>Customer Reviews</h3>
+    </div>
+    <div class="reviewsec">
+        <div class="review">
+            <img src="images/review/review1.jpg" alt="Customer Review" class="reviewimg" height="170" width="250">
+            <h4>Sid</h4>
+            <p>"The chicken shawarma was absolutely delicious! The flavors were amazing, and the meat was so tender. I
+                also
+                loved the baklava - it was the perfect way to end the meal."</p>
+            <small>★★★★★</small>
+        </div>
+        <div class="review">
+            <img src="images/review/review2.jpg" alt="Customer Review" class="reviewimg" height="170" width="250">
+            <h4>Joe</h4>
+            <p>"I'm a huge fan of the paneer shawarma - it's a great vegetarian option. The mango lassi was also
+                fantastic, and
+                the staff was very friendly."</p>
+            <small>★★★★☆</small>
+        </div>
+        <div class="review">
+            <img src="images/review/review3.jpg" alt="Customer Review" class="reviewimg" height="170" width="250">
+            <h4>shreya</h4>
+            <p>"The Paneer and Chicken Shawarma are too good and the lassi here is amazing and must try item is American
+                ice Coffee"</p>
+            <small>★★★★★</small>
+        </div>
+    </div>
+    <!---footer section-->
+    <div class="footer">
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section brand">
+                    <h1 class="logo-text">TandoorTreats</h1>
+                    <p>Discover the Flavorful World of Shawarma & Desserts</p>
+                </div>
+                <div class="footer-section contact">
+                    <h2>Contact</h2>
+                    <div class="contact-info">
+                        <span><i class="fas fa-phone"></i> &nbsp; 123-456-789</span>
+                        <span><i class="fas fa-envelope"></i> &nbsp; info@tandoortreats.com</span>
+                    </div>
+                </div>
+                <!-- Add more sections if needed, like address, etc. -->
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript code -->
+    <script src="script.js"></script>
+
+</div>
+</body>
+
+</html>

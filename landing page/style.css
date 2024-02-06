@@ -1,0 +1,639 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  box-sizing: border-box;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  color: aliceblue;
+  font-size: small;
+  margin: 0px 5px 0px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-sec {
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 5px;
+  transition: 0.4s;
+  border: 1px transparent solid;
+}
+
+nav a:hover {
+  border: 1px white solid;
+  text-decoration: none;
+  color: white;
+  background-color: #3f3e3e;
+}
+
+.herosection {
+  position: relative;
+  height: 40vh;
+  width: 100%;
+  background-image: url("images/Design.jpeg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.herosection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+.orderbtn button {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 2rem;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  box-shadow: 1px 1px rgb(0, 0, 0);
+  border: none;
+  transition: 0.4s;
+  transform: 0.4s;
+}
+
+.orderbtn button:active {
+  background-color: #2b2929;
+  font-weight: bold;
+  transform: scale(0.9);
+}
+
+.aboutsection {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aboutinfo {
+  width: 60%;
+}
+
+.aboutimg {
+  width: 40%;
+}
+
+.aboutinfo h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.aboutinfo p {
+  font-size: 1.6em;
+  margin: 20px 0;
+}
+
+.aboutimg img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.ourstory {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.storyimg img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.storyinfo {
+  width: 60%;
+}
+
+.storyinfo h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.storyinfo p {
+  font-size: 1.6em;
+  margin: 20px 0;
+}
+
+.storyimg {
+  width: 35%;
+  border: none;
+  border: 1px white solid;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.uniqueness {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.unqimg img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.unqinfo {
+  width: 60%;
+}
+
+.unqinfo h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.unqinfo p {
+  font-size: 1.6em;
+  margin: 20px 0;
+}
+
+.unqimg {
+  width: 35%;
+  border: none;
+  border: 1px white solid;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.promise {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promimg img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.prominfo {
+  width: 60%;
+}
+
+.prominfo h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.prominfo p {
+  font-size: 1.6em;
+  margin: 20px 0;
+}
+
+.promimg {
+  width: 35%;
+  border: none;
+  border: 1px white solid;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+/* Add these styles to your existing CSS */
+
+.menusec {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+.menusec nav {
+  background-color: rgb(0, 0, 0, 0.4);
+  margin: 2opx;
+  padding: 10px;
+}
+
+.foodmenu {
+  display: flex;
+  flex-direction: row; /* Change to row direction for the menu links to be in a row */
+  justify-content: space-around; /* Adjust as needed */
+  align-items: center; /* Center items vertically */
+  text-align: center;
+}
+
+.menu-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #ce0000;
+  cursor: pointer;
+}
+
+.menu-section {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap onto the next line */
+  justify-content: space-around;
+  width: 100%; /* Ensure the menu section takes full width */
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  display: none;
+  color: whit;
+}
+
+.menu-item {
+  flex: 0 0 30%; /* Adjust the width of each item as needed */
+  margin: 10px;
+  padding: 20px;
+  background-color: #eee;
+  border-radius: 5px;
+  text-align: center;
+  box-sizing: border-box; /* Ensure padding and border don't affect the width */
+}
+
+/* Additional styling for images */
+.menu-item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+  background-color: rgb(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.menu-item h2 {
+  margin: 10px 0;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu-item p {
+  color: #ffffff;
+}
+
+.menu-item .price {
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.menu-item button {
+  background-color: #ce0000;
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item button:hover {
+  background-color: #ab0000;
+}
+.menuhead {
+  background-color: rgb(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+/*review section*/
+.reviewsec {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Add gap between reviews */
+  padding: 20px; /* Add padding to the container */
+}
+
+.reviewhead {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  margin: 10px 0;
+  padding: 25px;
+}
+
+.review {
+  background-color: rgb(0, 0, 0, 0.6);
+  align-items: center;
+  border: none;
+  border-radius: 1rem;
+  height: 400px;
+  width: 300px; /* Adjust width to control space between reviews */
+  text-align: center;
+  transition: 0.4s;
+  margin: 30px;
+}
+.review:hover {
+  background-color: rgba(116, 5, 5, 0.6);
+  transform: scale(1.1);
+}
+.review img {
+  opacity: 1;
+  object-fit: fill;
+  margin: 15px;
+  border-radius: 1rem;
+}
+.footer {
+  background-color: rgb(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.contact-info {
+  margin-top: 10px;
+}
+
+.contact-info span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-info i {
+  margin-right: 5px;
+}
+
+/* General styling for responsiveness */
+@media only screen and (max-width: 768px) {
+  .nav-sec {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-sec nav {
+    margin-top: 15px;
+  }
+
+  .herosection {
+    height: 50vh;
+  }
+
+  .herosection h1 {
+    font-size: 1.5em;
+  }
+
+  .herosection p {
+    font-size: 1em;
+  }
+
+  .orderbtn button {
+    font-size: 0.8em;
+  }
+
+  .aboutsection,
+  .ourstory,
+  .uniqueness,
+  .promise {
+    flex-direction: column;
+  }
+
+  .aboutimg,
+  .storyimg,
+  .unqimg,
+  .promimg {
+    width: 100%;
+  }
+
+  .aboutinfo,
+  .storyinfo,
+  .unqinfo,
+  .prominfo {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .menu-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-item {
+    flex: 0 0 80%;
+  }
+
+  .menu-item img {
+    max-height: 100px;
+  }
+
+  .menu-item h2 {
+    font-size: 1.2em;
+  }
+
+  .menu-item p,
+  .menu-item .price {
+    font-size: 0.8em;
+  }
+
+  .menu-item button {
+    font-size: 0.8em;
+  }
+
+  .menuhead h3 {
+    font-size: 1.5em;
+  }
+}
+/* General styling for responsiveness */
+@media only screen and (max-width: 480px) {
+  .nav-sec {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-sec nav {
+    margin-top: 15px;
+  }
+
+  .herosection {
+    height: 40vh;
+  }
+
+  .herosection h1 {
+    font-size: 1.2em;
+  }
+
+  .herosection p {
+    font-size: 0.8em;
+  }
+
+  .orderbtn button {
+    font-size: 0.7em;
+  }
+
+  .aboutsection,
+  .ourstory,
+  .uniqueness,
+  .promise {
+    flex-direction: column;
+  }
+
+  .aboutimg,
+  .storyimg,
+  .unqimg,
+  .promimg {
+    width: 100%;
+  }
+
+  .aboutinfo,
+  .storyinfo,
+  .unqinfo,
+  .prominfo {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .menu-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-item {
+    flex: 0 0 80%;
+  }
+
+  .menu-item img {
+    max-height: 80px;
+  }
+
+  .menu-item h2 {
+    font-size: 1em;
+  }
+
+  .menu-item p,
+  .menu-item .price {
+    font-size: 0.7em;
+  }
+
+  .menu-item button {
+    font-size: 0.7em;
+  }
+
+  .menuhead h3 {
+    font-size: 1.2em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .review img {
+    max-width: 75%;
+    height: auto;
+    max-height:0%
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .footer-section h1.logo-text {
+    font-size: 1.2rem;
+  }
+
+  .footer-section p {
+    font-size: 0.8rem;
+  }
+
+  .contact-info span {
+    font-size: 0.8rem;
+  }
+
+  .footer-section h2 {
+    font-size: 1rem;
+  }
+
+  .contact-info i {
+    font-size: 1rem;
+  }
+}
